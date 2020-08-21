@@ -1,0 +1,50 @@
+<zk>
+    <style>
+        span.z-weight{
+            border: 1px solid #0486e0;
+            background-color: #b3daf6;
+            text-align: center;
+            display: inline-grid;
+            right: 0;
+            position: absolute;
+            padding: 2px;
+            margin: -12px 6px -3px 0;
+            top: 50%;
+            min-width: 45px;
+        }
+
+        tr.z-category.z-listitem{
+            border-top-width: 0;
+            margin-bottom: 5px;
+            display: block;
+            border: 1px solid #cccccc;
+        }
+
+        tr.z-subcategory.z-listitem{
+            border-top-width: 0;
+            margin-bottom: 5px;
+            margin-left: 25px;
+            display: block;
+            border: 1px solid #cccccc;
+        }
+
+        .z-row.z-listcell{
+            display: block;
+        }
+    </style>
+
+    <window apply="pe.japstones.zk.combobox.composer.ComboboxComposer">
+        <hbox>
+            <bandbox id="bd" mold="rounded" autodrop="true" readonly="true">
+                <bandpopup>
+                    <listbox id="listbox" height="250px" width="450px" mold="paging" pageSize="9">
+                    </listbox>
+                </bandpopup>
+            </bandbox>
+            <button id="btn">
+                Click
+            </button>
+        </hbox>
+
+    </window>
+</zk>
